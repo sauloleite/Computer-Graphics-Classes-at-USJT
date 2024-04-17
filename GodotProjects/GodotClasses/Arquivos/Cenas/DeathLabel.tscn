@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://c2vr1xmi3xso4"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_xl8ny"]
+
+[node name="DeathLabel" type="MarginContainer"]
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 2
+texture = SubResource("ViewportTexture_xl8ny")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+text = "Você morreu, tente novamente!"
