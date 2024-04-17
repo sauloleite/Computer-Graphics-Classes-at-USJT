@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://bd37hey5r2glt"]
+[gd_scene load_steps=9 format=3 uid="uid://bd37hey5r2glt"]
 
 [ext_resource type="Texture2D" uid="uid://bc6cgl4upudpy" path="res://Arquivos/Sprites/Seasonal Tilesets/Seasonal Tilesets/3 - Tropics/Background parts/_Complete_static_BG_(288 x 208).png" id="1_dajbh"]
 [ext_resource type="Texture2D" uid="uid://dxuiso2agefgg" path="res://Arquivos/Sprites/Seasonal Tilesets/Seasonal Tilesets/3 - Tropics/Terrain (16 x 16).png" id="2_ed7t7"]
 [ext_resource type="PackedScene" uid="uid://cwt267qiv86ed" path="res://Arquivos/Cenas/Player.tscn" id="3_ey7kj"]
+[ext_resource type="AudioStream" uid="uid://doddx1i27l3fn" path="res://Arquivos/Songs/Song1.mp3" id="3_igggd"]
 [ext_resource type="PackedScene" uid="uid://c0d55e71ctkqx" path="res://Arquivos/Cenas/Espinhos.tscn" id="4_3171s"]
 [ext_resource type="PackedScene" uid="uid://brq7t7l6awhtq" path="res://Arquivos/Cenas/Coin.tscn" id="5_8qwbs"]
 
@@ -187,6 +188,12 @@ position = Vector2(222, 824)
 position = Vector2(176.667, -115)
 scale = Vector2(0.333333, 0.333333)
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Player/CamPlayer"]
+position = Vector2(-752.002, -479.001)
+scale = Vector2(1, 1)
+stream = ExtResource("3_igggd")
+autoplay = true
+
 [node name="Espinhos" parent="." instance=ExtResource("4_3171s")]
 position = Vector2(1153, 888)
 scale = Vector2(0.3, 0.3)
@@ -208,7 +215,7 @@ position = Vector2(3355, 845)
 scale = Vector2(0.2, 0.2)
 
 [node name="Coin" parent="." instance=ExtResource("5_8qwbs")]
-position = Vector2(3992, 836)
+position = Vector2(1520, 794)
 scale = Vector2(3, 3)
 
 [node name="TileMap" type="TileMap" parent="."]
