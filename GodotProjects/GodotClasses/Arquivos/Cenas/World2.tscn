@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://dakrc462afg88"]
+[gd_scene load_steps=8 format=3 uid="uid://dakrc462afg88"]
 
 [ext_resource type="Texture2D" uid="uid://cccy8vyq6l2sp" path="res://Arquivos/Sprites/Seasonal Tilesets/Seasonal Tilesets/2 - Autumn Forest/Background parts/_Complete_static_BG_(288 x 208).png" id="1_nniy8"]
 [ext_resource type="Texture2D" uid="uid://5tun0ohl3c50" path="res://Arquivos/Sprites/Seasonal Tilesets/Seasonal Tilesets/2 - Autumn Forest/Terrain (16 x 16).png" id="2_emd7j"]
 [ext_resource type="PackedScene" uid="uid://cwt267qiv86ed" path="res://Arquivos/Cenas/Player.tscn" id="3_q8w3y"]
 [ext_resource type="PackedScene" uid="uid://bnbqnjc6qhqhx" path="res://Arquivos/Cenas/Enemy.tscn" id="4_tmril"]
+[ext_resource type="PackedScene" uid="uid://xdn00p3i7cao" path="res://Arquivos/Cenas/coins.tscn" id="5_cakpp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6aaom"]
 texture = ExtResource("2_emd7j")
@@ -162,14 +163,14 @@ sources/0 = SubResource("TileSetAtlasSource_6aaom")
 [node name="World2" type="Node2D"]
 
 [node name="ColorRect" type="ColorRect" parent="."]
-offset_top = -432.0
-offset_right = 3120.0
-offset_bottom = 998.0
+offset_top = -618.0
+offset_right = 4205.0
+offset_bottom = 812.0
 color = Color(1, 0.952941, 0.847059, 1)
 
-[node name="CompleteStaticBg(288X208)" type="TextureRect" parent="ColorRect"]
+[node name="Background" type="TextureRect" parent="ColorRect"]
 layout_mode = 0
-offset_right = 494.0
+offset_right = 666.0
 offset_bottom = 208.0
 scale = Vector2(6.31684, 6.87981)
 texture = ExtResource("1_nniy8")
@@ -189,3 +190,7 @@ position = Vector2(144.667, -88.3333)
 [node name="Enemy" parent="." instance=ExtResource("4_tmril")]
 position = Vector2(2148, 437)
 scale = Vector2(3, 3)
+
+[node name="Coins" parent="." instance=ExtResource("5_cakpp")]
+position = Vector2(2329, 456)
+scale = Vector2(2, 2)

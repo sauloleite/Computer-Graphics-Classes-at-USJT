@@ -190,7 +190,6 @@ scale = Vector2(0.333333, 0.333333)
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Player/CamPlayer"]
 position = Vector2(-752.002, -479.001)
-scale = Vector2(1, 1)
 stream = ExtResource("3_igggd")
 autoplay = true
 
@@ -215,7 +214,7 @@ position = Vector2(3355, 845)
 scale = Vector2(0.2, 0.2)
 
 [node name="Coin" parent="." instance=ExtResource("5_8qwbs")]
-position = Vector2(1520, 794)
+position = Vector2(1523, 794)
 scale = Vector2(3, 3)
 
 [node name="TileMap" type="TileMap" parent="."]

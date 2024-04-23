@@ -9,10 +9,10 @@ color = Color(0.313726, 0.733333, 1, 1)
 
 [node name="Label" type="Label" parent="."]
 texture_filter = 1
-offset_left = 424.0
-offset_top = 539.0
-offset_right = 748.0
-offset_bottom = 635.0
+offset_left = 100.0
+offset_top = 293.0
+offset_right = 424.0
+offset_bottom = 389.0
 scale = Vector2(5, 5)
-text = "Parabéns, você conseguiu pegar a moeda!
-                          Fim de jogo."
+text = "Parabéns, você conseguiu!
+           Fim de jogo."
