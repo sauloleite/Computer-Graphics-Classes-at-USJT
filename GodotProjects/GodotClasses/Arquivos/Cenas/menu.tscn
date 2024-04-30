@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://cdwmcccjsucbd"]
+
+[ext_resource type="Script" path="res://Arquivos/scripts/menu.gd" id="1_dthvo"]
+[ext_resource type="Texture2D" uid="uid://btyvykrqcuqi5" path="res://Arquivos/Sprites/Seasonal Tilesets/Seasonal Tilesets/1 - Grassland/Background parts/_Complete_static_BG_(288 x 208).png" id="1_sxuc4"]
+
+[node name="menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dthvo")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(919.99, 575.043)
+scale = Vector2(6.86813, 6.89382)
+texture = ExtResource("1_sxuc4")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_left = 890.0
+offset_top = 518.0
+offset_right = 998.0
+offset_bottom = 619.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Play" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Iniciar o jogo
+"
+
+[node name="Multiplayer" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Multiplayer"
+
+[node name="Exit" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Sair do jogo"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Multiplayer" to="." method="_on_multiplayer_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Exit" to="." method="_on_exit_pressed"]
